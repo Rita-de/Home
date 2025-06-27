@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: whitesmoke;
+  color: black;
+}
+
+header {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(88, 7, 88, 0.808), rgba(0, 0, 0, 0.76)),
+    url(img/img1.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+  background-color: rgb(206, 93, 206);
+  
+  height: 15vh;
+  margin-left: 29vh;
+  border-radius: 10px;
+}
+
+nav h1 {
+  margin-left: 3rem;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+
+menu {
+  display: flex;
+  justify-content: space-between;
+  justify-content: end;
+  align-items: end;
+  margin-right: 3rem;
+  gap: 2rem;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+a:hover {
+  padding: 15px;
+  background-color: rgb(206, 93, 206);
+  border-radius: 10px;
+  transition: all 0.5 ease;
+  transform: scale(1.1);
+}
+
+.text1 {
+  color: white;
+  margin-top: 0.5rem;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 30rem;
+  
+}
+.text1 h2 {
+  font-size: 2rem;
+  /* color:  rgb(206, 93, 206); */
+  padding-right: 4rem;
+  animation: fade 2.5s linear forwards;
+}
+
+@keyframes fade {
+  0% {
+    transform: translateX(-10rem);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.text1 p{
+  animation: scale 3.5s linear forwards;
+  width: 100%;
+}
+
+@keyframes scale {
+  0%{
+    transform: translateX(-20rem);
+    opacity: 1;
+  }
+
+  100%{
+    opacity: 2;
+  }
+
+}
+
+.btn1 {
+  margin-left: 9rem;
+  margin-top: 0.5rem;
+  animation: btnn 4s linear;
+}
+
+@keyframes btnn {
+  0%{
+    transform: translateX(-20rem);
+    opacity: 1;
+  }
+
+  100%{
+    opacity: 2;
+  }
+
+}
+
+.btn {
+  padding: 15px;
+  border-radius: 2rem;
+  background-color: rgb(206, 93, 206);
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
